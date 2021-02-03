@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Popover, Select, Switch } from 'antd';
 import SortableTable from '../CreateJobTable';
 import { postCreatedUpdate } from '../../core/actions';
-import { IconClose, IconInfo } from '../icons';
+import { IconInfo } from '../icons';
 import './style.scss';
 
 const { Option } = Select;

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Layout } from 'antd';
 import Aside from '../Aside';
 import Header from '../Header';

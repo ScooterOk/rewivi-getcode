@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Drawer, Input } from 'antd';
 
 import IconFilterButton from '../../assets/img/filter-blue.svg';

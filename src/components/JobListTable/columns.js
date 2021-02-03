@@ -1,3 +1,4 @@
+import React from 'react';
 import { Dropdown, Menu, Tag, Tooltip } from 'antd';
 import { IconDelete, IconPause, IconPlay, IconShare } from '../icons';
 

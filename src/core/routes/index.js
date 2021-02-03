@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom';
 import HowToStart from '../../pages/HowToStart';
 import CreateJob from '../../pages/CreateJob';

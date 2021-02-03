@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Menu, Dropdown } from "antd";
+import React, { useState } from 'react';
+import { Menu, Dropdown } from 'antd';
 
-import "./style.scss";
+import './style.scss';
 
 const LangSekect = () => {
   const [buttonActive, setBbuttonActive] = useState(false);
@@ -12,10 +12,10 @@ const LangSekect = () => {
   const menu = (
     <Menu>
       <Menu.Item onClick={onClick}></Menu.Item>
-      <Menu.Item key='ru' onClick={onClick}>
+      <Menu.Item key="ru" onClick={onClick}>
         Ru
       </Menu.Item>
-      <Menu.Item key='ua' onClick={onClick}>
+      <Menu.Item key="ua" onClick={onClick}>
         Ua
       </Menu.Item>
     </Menu>
@@ -28,14 +28,11 @@ const LangSekect = () => {
   return (
     <Dropdown
       overlay={menu}
-      overlayClassName='lang-select-overlay'
-      trigger={["click"]}
+      overlayClassName="lang-select-overlay"
+      trigger={['click']}
       onVisibleChange={onVisibleChange}
-      onSw
-    >
-      <button className={`lang-select ${buttonActive ? "active" : ""}`}>
-        En {buttonActive}
-      </button>
+      onSw>
+      <button className={`lang-select ${buttonActive ? 'active' : ''}`}>En {buttonActive}</button>
     </Dropdown>
   );
 };

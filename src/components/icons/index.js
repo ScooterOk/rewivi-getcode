@@ -1,3 +1,4 @@
+import React from 'react';
 import Library from '../../assets/img/library.svg';
 import Settings from '../../assets/img/settings.svg';
 import Candidates from '../../assets/img/candidates.svg';

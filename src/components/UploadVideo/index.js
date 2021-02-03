@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Row, Col, Upload } from 'antd';
 import videojs from 'video.js';
 import RecordRTC from 'recordrtc';

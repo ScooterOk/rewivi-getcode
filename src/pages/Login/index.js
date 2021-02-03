@@ -1,15 +1,12 @@
-import { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { notification } from 'antd';
 import Layout from '../../components/Layout/Layout';
 import LoginForm from '../../components/LoginForm';
 
 import { fetchLogin } from '../../core/services';
-import { clearUserData } from '../../core/actions';
 
 import './style.scss';
-import { IconWarning } from '../../components/icons';
 
 const LoginPage = (props) => {
   const dispatch = useDispatch();

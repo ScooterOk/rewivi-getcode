@@ -1,3 +1,4 @@
+import React from 'react';
 import { notification } from 'antd';
 import { connect } from 'react-redux';
 import { Route, Redirect } from 'react-router-dom';

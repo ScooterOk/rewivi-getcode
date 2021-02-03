@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { connect, useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Row, Col, Input, Form, Button } from 'antd';
 

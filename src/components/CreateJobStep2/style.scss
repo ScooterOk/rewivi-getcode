@@ -1,0 +1,54 @@
+.create-job__table {
+  .ant-table {
+    table > thead > tr > th {
+      background-color: transparent;
+      font-weight: 600;
+      line-height: 1.71;
+      color: #1e1e3c;
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+.create-job {
+  .create-job__step-2 {
+    padding: 32px 64px 100px 64px;
+    .create-job__timing {
+      width: 430px;
+      position: relative;
+      margin-top: 40px;
+      .popover-icon {
+        top: 0;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: -0.2px;
+        color: #1e1e3c;
+        margin-bottom: 16px;
+      }
+      .form-control {
+        margin-bottom: 16px;
+        &.switch {
+          margin-top: 40px;
+          label {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 8px;
+            }
+          }
+        }
+        label {
+          margin-right: 18px;
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

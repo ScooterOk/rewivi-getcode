@@ -1,0 +1,70 @@
+.icon-info {
+  &:hover {
+    circle {
+      fill: #0082e6;
+    }
+  }
+  circle {
+    fill: #babac3;
+    transition: fill 300ms ease;
+  }
+  rect {
+    fill: #fff;
+  }
+}
+.icon-delete {
+  &:hover {
+    .icon-delete--fill {
+      fill: #f22245;
+    }
+  }
+  .icon-delete--fill {
+    fill: #babac3;
+    transition: fill 300ms ease;
+  }
+}
+.icon-share {
+  &:hover {
+    .icon-share--fill {
+      fill: #0082e6;
+    }
+  }
+  .icon-share--fill {
+    fill: #757587;
+    transition: fill 300ms ease;
+  }
+}
+.icon-pause {
+  &:hover {
+    .icon-pause--fill {
+      fill: #0082e6;
+    }
+  }
+  .icon-pause--fill {
+    fill: #757587;
+    transition: fill 300ms ease;
+  }
+}
+.icon-play {
+  &:hover {
+    .icon-play--fill {
+      fill: #0082e6;
+    }
+  }
+  .icon-play--fill {
+    fill: #757587;
+    transition: fill 300ms ease;
+  }
+}
+
+.icon-close {
+  &:hover {
+    .icon-close--fill {
+      fill: #0082e6 !important;
+    }
+  }
+  .icon-close--fill {
+    fill: #000;
+    transition: fill 300ms ease;
+  }
+}

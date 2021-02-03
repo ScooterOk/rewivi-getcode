@@ -1,0 +1,146 @@
+.job-list-table {
+  margin-top: 24px;
+  .ant-pagination {
+    margin-top: 16px;
+    text-align: right;
+  }
+  .job-list-table__actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    .actions--filter {
+      width: 136px;
+      color: #1e1e3c;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: auto;
+    }
+    .actions--select {
+      margin-left: auto;
+      margin-right: 16px;
+      .ant-select-selection-item {
+        font-weight: 600;
+        &::before {
+          content: 'Show:';
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+          letter-spacing: normal;
+          color: #757587;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .ant-table {
+    background-color: transparent;
+    min-width: 900px;
+    .ant-table-cell {
+      padding: 8px;
+      &:first-child {
+        padding-left: 24px;
+      }
+    }
+    .ant-table-thead {
+      .ant-table-cell {
+        background-color: transparent;
+        font-size: 10px;
+        font-weight: 600;
+        color: #6f6f82;
+        text-transform: uppercase;
+        .ant-table-column-sorters {
+          padding: 0;
+          display: flex;
+          align-items: center;
+          .ant-table-column-sorter-up,
+          .ant-table-column-sorter-down {
+            font-size: 8px;
+          }
+          .ant-table-column-sorter {
+          }
+        }
+      }
+    }
+    .ant-table-tbody {
+      box-shadow: 0 2px 4px 0 rgba(69, 92, 156, 0.3);
+      border-radius: 0 0 4px 4px;
+      .ant-table-row {
+        &:nth-child(even) {
+          .ant-table-cell {
+            background-color: #f7f8fb;
+          }
+        }
+        &:first-child {
+          .ant-table-cell {
+            &:first-child {
+              border-radius: 4px 0 0 0;
+            }
+            &:last-child {
+              border-radius: 0 4px 0 0;
+            }
+          }
+        }
+        &:last-child {
+          .ant-table-cell {
+            &:first-child {
+              border-radius: 0 0 0 4px;
+            }
+            &:last-child {
+              border-radius: 0 0 4px 0;
+            }
+          }
+        }
+        .ant-table-cell {
+          background-color: #fff;
+          &.ant-table-column-sort {
+            background-color: #f7f8fb;
+          }
+          &.status {
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+          }
+          &.title {
+            font-weight: 600;
+          }
+          &.tags {
+            white-space: nowrap;
+            .ant-dropdown-trigger {
+              color: #0082e6;
+              cursor: pointer;
+            }
+          }
+          &.finish {
+          }
+          &.created {
+          }
+          &.action {
+            .table--actions {
+              display: flex;
+              align-items: center;
+              button {
+                border: none;
+                background: none;
+                outline: none;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 16px;
+                padding: 0;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

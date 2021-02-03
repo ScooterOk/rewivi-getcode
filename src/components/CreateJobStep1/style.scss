@@ -1,0 +1,49 @@
+.popover-icon {
+  position: absolute;
+  left: calc(100% + 8px);
+  top: 32px;
+}
+.form-control {
+  position: relative;
+}
+.create-job {
+  .steps__client {
+    position: relative;
+    .form-control {
+      label {
+        display: block;
+      }
+      .ant-select {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 24px;
+    label {
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #1e1e3c;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+  }
+  .steps-company-upload {
+    .ant-upload {
+      line-height: 1.57;
+      color: #0082e6;
+      cursor: pointer;
+    }
+  }
+  .steps-continue {
+    margin-top: 50px;
+  }
+  .create-job__step-1 {
+    padding: 33px 36px 48px 80px;
+  }
+}

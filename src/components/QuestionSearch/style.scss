@@ -1,0 +1,56 @@
+.questions-autocomplete {
+  .ant-select-auto-complete {
+    &.ant-select-focused {
+      .ant-select-selection-search {
+        &::before {
+          opacity: 0;
+        }
+        &::after {
+          opacity: 1;
+        }
+      }
+      .ant-select-selection-search-input {
+        padding-left: 16px !important;
+        padding-right: 72px !important;
+      }
+    }
+    .ant-select-selection-search {
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../../assets/img/icon-search-black.svg') no-repeat center;
+        position: absolute;
+        left: 8px;
+        top: calc(50% - 12px);
+        transition: opacity 300ms ease;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('../../assets/img/icon-search-blue.svg') no-repeat center;
+        position: absolute;
+        right: 16px;
+        top: calc(50% - 12px);
+        opacity: 0;
+        transition: opacity 300ms ease;
+      }
+      .ant-select-selection-search-input {
+        background-color: transparent;
+        padding: 0 48px 0 40px;
+        &:focus {
+          border-color: #3968ea;
+        }
+      }
+    }
+  }
+}
+
+.questions-autocomplete-spiner {
+  display: block !important;
+  margin: auto !important;
+}

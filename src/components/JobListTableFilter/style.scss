@@ -1,0 +1,99 @@
+.job-list-table__filter {
+  .filter--title {
+    position: relative;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    & > span {
+      font-size: 32px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: -0.2px;
+      margin-right: auto;
+    }
+    button {
+      margin-left: 16px;
+    }
+    &::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url('../../assets/img/filter-black.svg') no-repeat center;
+      position: absolute;
+      top: calc(50% - 12px);
+      left: -36px;
+    }
+  }
+  .filter--tags-list {
+    max-height: 270px;
+    overflow: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: linear-gradient(90deg, #fff 25%, #939393 25%, #939393 75%, #fff 75%);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #939393;
+    }
+  }
+  .form-group {
+    margin-bottom: 40px;
+    &.includes-question {
+      .form-control {
+        margin-bottom: 12px;
+        label {
+          margin-bottom: 4px;
+          font-size: 12px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2;
+          letter-spacing: normal;
+          color: #757587;
+        }
+      }
+      .yourself {
+        display: flex;
+        align-items: center;
+        button {
+          width: 24px;
+          height: 24px;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .form-group--title {
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      margin-bottom: 8px;
+    }
+    .form-control {
+      margin-bottom: 16px;
+      label {
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

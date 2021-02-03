@@ -1,0 +1,63 @@
+.lang-select {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #3968ea;
+  border-radius: 16px;
+  transition: background-color 300ms ease;
+  position: relative;
+  margin-left: auto;
+  opacity: 1 !important;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  &.active {
+    background-color: #fff !important;
+  }
+  &:hover {
+    background-color: #f4f4f9;
+  }
+}
+
+.lang-select-overlay {
+  position: fixed !important;
+  .ant-dropdown-menu {
+    border-radius: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 25, 94, 0.1);
+    width: 48px;
+    overflow: hidden;
+    background-color: transparent;
+    transform: translateY(-53px);
+    padding: 0;
+    .ant-dropdown-menu-item {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.63;
+      letter-spacing: normal;
+      text-align: center;
+      color: #1e1e3c;
+      background-color: #ffffff;
+      &:first-child {
+        background-color: transparent !important;
+      }
+      &:hover {
+        background-color: #f4f4f9;
+      }
+    }
+  }
+}

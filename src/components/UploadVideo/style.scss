@@ -1,0 +1,66 @@
+.ant-upload.ant-upload-drag.upload-dragger {
+  background-color: #fff;
+  border-color: #3968ea;
+  height: 112px;
+  &.preview {
+    display: none;
+  }
+  .dragger--icon {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dragger--text {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3968ea;
+  }
+}
+.record-video {
+  background-color: #fff;
+  border: 1px dashed #3968ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 112px;
+  .record--icon {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .record--text {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #3968ea;
+  }
+}
+.video-record {
+  width: 100%;
+  height: auto;
+  padding-top: 75%;
+  .vjs-tech {
+    //height: auto;
+  }
+}
+
+.video-player-wrapper {
+  video {
+    width: 100%;
+  }
+}

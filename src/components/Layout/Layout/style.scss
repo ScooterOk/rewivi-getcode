@@ -1,0 +1,104 @@
+.app {
+  background-color: #e4e8f5;
+  overflow: hidden;
+  min-height: 100vh;
+  .main-content {
+    padding: 88px 56px 34px 296px;
+  }
+  &.hello-page {
+    .hello-page__wrapper {
+      width: 600px;
+      margin: auto;
+      margin-top: 74px;
+      h1 {
+        color: #1e1e3c;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: -0.1px;
+        line-height: 42px;
+        text-align: center;
+        &.thank-you {
+          font-size: 40px;
+        }
+      }
+      .hello-page__sub-title {
+        color: #757587;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 12px;
+        margin-bottom: 24px;
+      }
+      .hello-page__form {
+        width: 368px;
+        margin: auto;
+        .hello-form__link {
+          margin-top: 16px;
+          text-align: center;
+        }
+        .hello-form__footer-link {
+          margin-top: 80px;
+          text-align: center;
+        }
+        .hello-form {
+          .ant-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ant-form-item {
+              width: 100%;
+            }
+            .hello-form__submit {
+              width: 232px;
+              margin: auto;
+              margin-top: 32px;
+              button {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .ant-select-selection-search {
+          left: 16px;
+        }
+        .ant-select-selector {
+          background: #fff url('../../../assets/img/icon-search-blue.svg') no-repeat right 16px center;
+        }
+        .ant-row.ant-form-item {
+          margin-bottom: 8px;
+          .ant-form-item-label {
+            padding-bottom: 4px;
+            & > label {
+              color: #757587;
+              font-size: 12px;
+              letter-spacing: 0;
+              line-height: 24px;
+            }
+          }
+        }
+        .ant-input-password {
+          padding: 0 16px 0 0;
+          .ant-input {
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+    .country-select {
+      width: 100%;
+      .ant-select-selector {
+        height: 40px;
+        .ant-select-selection-search-input {
+          height: 40px;
+        }
+        .ant-select-selection-item {
+          line-height: 40px;
+        }
+        .ant-select-selection-placeholder {
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

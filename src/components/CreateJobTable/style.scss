@@ -1,0 +1,141 @@
+.row-dragging {
+  background: #e4e8f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 25, 94, 0.1);
+}
+
+.row-dragging td {
+  padding: 8px 0;
+  //visibility: hidden;
+  .questions-table__input {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+  }
+  &.sort {
+    width: 56px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+  &.question {
+    width: 50%;
+  }
+  &.required {
+    width: 15%;
+    text-align: center;
+  }
+  &.substitution {
+    width: 15%;
+    text-align: center;
+  }
+  &.addLibrary {
+    width: 15%;
+    text-align: center;
+  }
+}
+
+.row-dragging .drag-visible {
+  visibility: visible;
+}
+.create-job__table {
+  .questions-table__add {
+    margin-top: 24px;
+    width: 40px;
+    color: #0082e6;
+    font-size: 28px;
+  }
+}
+.questions-table {
+  .ant-empty {
+    display: none;
+  }
+  .questions-table__input {
+    display: flex;
+    align-items: center;
+    .ant-input {
+      text-overflow: ellipsis;
+    }
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+  }
+  table {
+    th.ant-table-cell {
+      text-align: center;
+      padding: 0 0 8px 0px !important;
+      &.question {
+        .head--name {
+          justify-content: flex-start;
+        }
+        .questions-autocomplete {
+          padding-right: 48px;
+          .ant-select {
+            width: 100%;
+          }
+        }
+      }
+      .head--name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        margin-bottom: 8px;
+      }
+    }
+    tr {
+      &:nth-child(even) {
+        td {
+          background-color: #f7f8fb;
+          &:first-child {
+            border-radius: 4px 0 0 4px;
+          }
+          &:last-child {
+            border-radius: 0 4px 4px;
+          }
+        }
+      }
+    }
+    td {
+      text-align: center;
+      border: none !important;
+      padding: 8px 0px !important;
+      &.sort {
+        width: 56px;
+      }
+      &.question {
+        width: 50%;
+      }
+      &.required {
+        width: 15%;
+      }
+      &.substitution {
+        width: 15%;
+      }
+      &.addLibrary {
+        width: 15%;
+      }
+    }
+  }
+}
